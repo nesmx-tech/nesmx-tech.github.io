@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Tabata Coach</title>
-<!-- MANIFESTE INTÉGRÉ -->
-<link rel="manifest" href="application/manifest+json;base64,eyJuYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJzaG9ydF9uYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJkZXNjcmlwdGlvbiI6IkNocm9ubyBISUlUICYgVGFiYXRhXG5cbkVuIGNocm9ubyBzaW1wbGUsIHB1aXNzYW50IGV0IHDDqW5z6WUgcG91ciBsJ2VudHJhw6luZW1lbnQgcsOpZWwuXG5QYXMgZGUgYmxhYmxhLiBKdXN0ZSBjZSBxdSdpbCBmYXV0IHBvdXIgZW52b3llci5cblxuWW91bmVzIFBlcnNvbmFsIFRyYWlubmVyIGVzdCB1bmUgUFdBIcOpcmlz6WUgcG91ciBsZXMgc3BvcnRpZnMsIGNvYWNoIHNldCBwcmF0aXF1YW50cyBkZSBISUlULCBUYWJhdGEsIENyb3NzLXRyYWluaW5nLCBKSkIsIGdyYXBwbGluZyBvdSBwcsOpcGFyYXRpb24gcGh5c2lxdWUuXG5cbkZvbmN0aW9ubmFsaXRpxJlzIGNs6JtzXG5DaHJvbm8gVGFiYXRhIC8gSElJVCBlbnRpcmVtZW50IHBlcnNvbm5hbGlzYWJsZVxuUHJlc2V0cyBwcvl0cyDDoCBsJ2VtcGxvaSAoMzAvMzAsIHJhbmRvcmksIGNpcmN1aXRzLCBldGMuKVxuQW5ub25jZXMgdm9jYWxlcyBlbiBhbmdsYWlzLCB2b2lzIGdyYXZlIGV0IG1vdGl2YW50ZVxuQWZmaWNoYWdlIGNsYWlyLCBsaXNpYmxlLCB1dGlsaXNhYmxlIGVuIHBsZWluIGVmZm9ydFxuTW9kZSByb3RhdGlvbiBwb3VyIHBvc2VyIGxlIHRlbMOpcGhvbmUgYXUgc29sXG5DYWxjdWwgZHUgdGVtcHMgdG90YWwgcmVzdGFudCBlbiB0ZW1wcyByw6lsZVxuRm9uY3Rpb25uZSBob3JzIGxpbmUgKFBXQSkiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzExMTEzMCIiLCJ0aGVtZV9jb2xvciI6IiNjMTEyMWYiLCJzdGFydF91cmwiOiIvIiwic2NvcGUiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJvcmllbnRhdGlvbiI6ImFueSIsImRpcjIiOiJsdHIiLCJjYXRlZ29yaWVzIjpbInNwb3J0cyJdLCJpY29ucyI6W3sic3JjIjoiaWNvbi01MTJ4NTEyLnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmciLCJwdXJwb3NlIjoiYW55In1dfQ==">
+<title>Chrono HIIT & Tabata</title>
+
+<!-- MANIFEST EMBARQUE - Valide pour PWABuilder -->
+<link rel="manifest" href="application/manifest+json;base64,eyJuYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJzaG9ydF9uYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJkZXNjcmlwdGlvbiI6IkNocm9ubyBISUlUICYgVGFiYXRhXG5cbkVuIGNocm9ubyBzaW1wbGUsIHB1aXNzYW50IGV0IHDDqW5z6WUgcG91ciBsJ2VudHJhw6luZW1lbnQgcsOpZWwuXG5QYXMgZGUgYmxhYmxhLiBKdXN0ZSBjZSBxdSdpbCBmYXV0IHBvdXIgZW52b3llci5cblxuWW91bmVzIFBlcnNvbmFsIFRyYWlubmVyIGVzdCB1bmUgUFdBIcOpcmlz6WUgcG91ciBsZXMgc3BvcnRpZnMsIGNvYWNoIHNldCBwcmF0aXF1YW50cyBkZSBISUlULCBUYWJhdGEsIENyb3NzLXRyYWluaW5nLCBKSkIsIGdyYXBwbGluZyBvdSBwcsOpcGFyYXRpb24gcGh5c2lxdWUuXG5cbkZvbmN0aW9ubmFsaXRpxJlzIGNs6JtzXG5DaHJvbm8gVGFiYXRhIC8gSElJVCBlbnRpcmVtZW50IHBlcnNvbm5hbGlzYWJsZVxuUHJlc2V0cyBwcvl0cyDDoCBsJ2VtcGxvaSAoMzAvMzAsIHJhbmRvcmksIGNpcmN1aXRzLCBldGMuKVxuQW5ub25jZXMgdm9jYWxlcyBlbiBhbmdsYWlzLCB2b2lzIGdyYXZlIGV0IG1vdGl2YW50ZVxuQWZmaWNoYWdlIGNsYWlyLCBsaXNpYmxlLCB1dGlsaXNhYmxlIGVuIHBsZWluIGVmZm9ydFxuTW9kZSByb3RhdGlvbiBwb3VyIHBvc2VyIGxlIHRlbMOpcGhvbmUgYXUgc29sXG5DYWxjdWwgZHUgdGVtcHMgdG90YWwgcmVzdGFudCBlbiB0ZW1wcyByw6lsZVxuRm9uY3Rpb25uZSBob3JzIGxpbmUgKFBXQSkiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzExMTEzMCIiLCJ0aGVtZV9jb2xvciI6IiNjMTEyMWYiLCJzdGFydF91cmwiOiIvIiwic2NvcGUiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJvcmllbnRhdGlvbiI6ImFueSIsImRpcjIiOiJsdHIiLCJjYXRlZ29yaWVzIjpbInNwb3J0cyJdLCJpY29ucyI6W119">
 
 <style>
 html, body {
@@ -201,10 +202,10 @@ body.rotate-mode .settings {
     <div class="info" id="info">Serie 0 / 0 — Exo 0 / 0</div>
 </div>
 
-<!-- BOUTON ROTATION : TOUJOURS EN BAS À GAUCHE -->
+<!-- BOUTON ROTATION : EN BAS À GAUCHE -->
 <button class="rotate-btn" onclick="toggleRotate()">🔄</button>
 
-<!-- CRÉDIT EN HAUT À DROITE (UNE SEULE FOIS) -->
+<!-- CRÉDIT -->
 <div class="credit">
     <a href="https://sites.google.com/view/younes-personal-trainer" target="_blank" rel="noopener">Younes Personal Trainer</a>
 </div>
@@ -212,267 +213,7 @@ body.rotate-mode .settings {
 </div>
 
 <script>
-// ======================
-// VARIABLES
-// ======================
-let interval = null;
-let countdownInterval = null;
-let phase = "idle";
-let timeLeft = 0;
-let phaseDuration = 0;
-let seriesCount = 1;
-let toursCount = 1;
-let started = false;
-let paused = false;
-let wakeLock = null;
-let audioContext = null;
-
-// ======================
-// PRESETS
-// ======================
-const basePresets = [
-    { name: "Randori JJB 5/1 x5", tours:1, series:5, workMin:5, workSec:0, restMin:1, restSec:0, seriesRestMin:1, seriesRestSec:0 },
-    { name: "30/30 x5 x4", tours:4, series:5, workMin:0, workSec:30, restMin:0, restSec:30, seriesRestMin:1, seriesRestSec:30 }
-];
-
-// ======================
-// UTILITAIRES
-// ======================
-function loadPresetList() {
-    const s = document.getElementById("presetList");
-    const c = s.value;
-    s.innerHTML = '<option value="">Charger un preset</option>';
-    basePresets.forEach(p => {
-        const o = document.createElement("option");
-        o.value = p.name;
-        o.textContent = p.name;
-        s.appendChild(o);
-    });
-    s.value = c;
-}
-
-function loadPreset() {
-    const n = document.getElementById("presetList").value;
-    if (!n) return;
-    const p = basePresets.find(x => x.name === n);
-    if (!p) return;
-    document.getElementById("tours").value = p.tours;
-    document.getElementById("series").value = p.series;
-    document.getElementById("workMin").value = p.workMin;
-    document.getElementById("workSec").value = p.workSec;
-    document.getElementById("restMin").value = p.restMin;
-    document.getElementById("restSec").value = p.restSec;
-    document.getElementById("seriesRestMin").value = p.seriesRestMin;
-    document.getElementById("seriesRestSec").value = p.seriesRestSec;
-    updateTotalRemaining();
-}
-
-function getSeconds(minId, secId) {
-    return (parseInt(document.getElementById(minId).value) || 0) * 60 + (parseInt(document.getElementById(secId).value) || 0);
-}
-
-function formatTime(s) {
-    const sec = Math.max(0, s);
-    const m = Math.floor(sec / 60);
-    const se = sec % 60;
-    return `${m.toString().padStart(2, '0')}:${se.toString().padStart(2, '0')}`;
-}
-
-// ======================
-// AUDIO
-// ======================
-function beep(f = 800, d = 0.1) {
-    try {
-        if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        const o = audioContext.createOscillator(), g = audioContext.createGain();
-        o.connect(g); g.connect(audioContext.destination);
-        o.frequency.value = f; g.gain.value = 0.3;
-        o.start(); o.stop(audioContext.currentTime + d);
-    } catch (e) { console.warn("Beep non supporté"); }
-}
-
-function say(text) {
-    if (!window.speechSynthesis) return;
-    try {
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = "en-US"; u.pitch = 0.3; u.rate = 0.85;
-        const voices = speechSynthesis.getVoices();
-        const v = voices.find(v => v.lang.startsWith("en") && (v.name.includes("Male") || v.name.includes("Daniel") || v.name.includes("Alex") || v.name.includes("Fred")));
-        if (v) u.voice = v;
-        speechSynthesis.speak(u);
-    } catch (e) { console.warn("Synthèse vocale non supportée"); }
-}
-
-// ======================
-// WAKE LOCK (FONCTIONNE EN APK)
-// ======================
-async function requestWakeLock() {
-    if ('wakeLock' in navigator && !wakeLock) {
-        try {
-            wakeLock = await navigator.wakeLock.request('screen');
-        } catch (err) { console.warn('Wake Lock non dispo'); }
-    }
-}
-
-async function releaseWakeLock() {
-    if (wakeLock) {
-        try { await wakeLock.release(); wakeLock = null; }
-        catch (err) { console.warn('Release Wake Lock'); }
-    }
-}
-
-// Réactiver si l’utilisateur revient dans l’app
-document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && started && !paused) {
-        requestWakeLock();
-    }
-});
-
-// ======================
-// LOGIQUE PRINCIPALE
-// ======================
-async function startPause() {
-    if (!started) {
-        await requestWakeLock();
-        started = true;
-        paused = false;
-        countdown();
-    } else {
-        paused = !paused;
-        if (!paused) {
-            beep(600, 0.2);
-            await requestWakeLock();
-        }
-    }
-}
-
-function countdown() {
-    let c = 3;
-    document.getElementById("timer").textContent = c + ":00";
-    document.getElementById("info").textContent = "Get ready...";
-    say("Get ready"); beep(400, 0.1);
-    countdownInterval = setInterval(() => {
-        if (paused) return;
-        c--;
-        if (c > 0) {
-            document.getElementById("timer").textContent = c + ":00";
-            say(c); beep(400, 0.1);
-        } else {
-            clearInterval(countdownInterval);
-            say("GO!"); beep(1000, 0.3);
-            initWorkout();
-        }
-    }, 1000);
-}
-
-function initWorkout() {
-    toursCount = 1; seriesCount = 1;
-    phase = "work";
-    phaseDuration = timeLeft = getSeconds("workMin", "workSec");
-    setPhase(); runLoop();
-}
-
-function runLoop() {
-    clearInterval(interval);
-    interval = setInterval(() => {
-        if (paused) return;
-        if (timeLeft <= 3 && timeLeft > 0) {
-            document.body.classList.add("flash-warning");
-            beep(1200, 0.1);
-            setTimeout(() => document.body.classList.remove("flash-warning"), 500);
-        }
-        document.getElementById("timer").textContent = formatTime(timeLeft);
-        updateTotalRemaining(); updateProgress(); timeLeft--;
-        if (timeLeft < 0) nextPhase();
-    }, 1000);
-}
-
-function nextPhase() {
-    const W = getSeconds("workMin", "workSec");
-    const R = getSeconds("restMin", "restSec");
-    const SR = getSeconds("seriesRestMin", "seriesRestSec");
-    const S = parseInt(document.getElementById("series").value) || 1;
-    const T = parseInt(document.getElementById("tours").value) || 1;
-
-    if (phase === "work") {
-        if (seriesCount < S) {
-            phase = "rest"; timeLeft = phaseDuration = R; say("Rest"); beep(600, 0.2);
-        } else if (toursCount < T) {
-            toursCount++; seriesCount = 0;
-            phase = "seriesRest"; timeLeft = phaseDuration = SR; say("Break time"); beep(500, 0.3);
-        } else {
-            say("Workout complete. Well done!"); beep(1000, 0.5); reset(); return;
-        }
-    } else if (phase === "rest") {
-        seriesCount++; phase = "work"; timeLeft = phaseDuration = W; say(`Round ${seriesCount}`); beep(1000, 0.2);
-    } else if (phase === "seriesRest") {
-        seriesCount = 1; phase = "work"; timeLeft = phaseDuration = W; say(`Series ${toursCount}. Round ${seriesCount}`); beep(1000, 0.3);
-    }
-    setPhase();
-}
-
-function setPhase() {
-    const r = document.body.classList.contains("rotate-mode");
-    document.body.className = phase + (r ? " rotate-mode" : "");
-    document.getElementById("info").textContent = `Serie ${toursCount} / ${document.getElementById("tours").value} — Exo ${seriesCount} / ${document.getElementById("series").value}`;
-    updateProgress(true);
-}
-
-function updateProgress(reset = false) {
-    const b = document.getElementById("progressBar");
-    b.style.width = reset ? "0%" : (phaseDuration > 0 ? Math.min(100, Math.max(0, ((phaseDuration - timeLeft) / phaseDuration * 100))) + "%" : "0%");
-}
-
-function updateTotalRemaining() {
-    let rem = 0;
-    if (phase === "idle") {
-        const t = parseInt(document.getElementById("tours").value) || 1;
-        const s = parseInt(document.getElementById("series").value) || 1;
-        const w = getSeconds("workMin", "workSec");
-        const r = getSeconds("restMin", "restSec");
-        const sr = getSeconds("seriesRestMin", "seriesRestSec");
-        rem = t * (s * w + (s - 1) * r + sr) - sr;
-    } else {
-        const t = parseInt(document.getElementById("tours").value) || 1;
-        const s = parseInt(document.getElementById("series").value) || 1;
-        const w = getSeconds("workMin", "workSec");
-        const r = getSeconds("restMin", "restSec");
-        const sr = getSeconds("seriesRestMin", "seriesRestSec");
-        rem += Math.max(timeLeft, 0);
-        if (phase === "work") rem += (s - seriesCount) * (w + r);
-        else if (phase === "rest") rem += (s - seriesCount) * (w + r) + w;
-        if (toursCount < t) {
-            rem += sr;
-            if (phase === "seriesRest") { rem -= sr; rem += (s - 1) * (w + r) + w; }
-            rem += (t - toursCount - 1) * (s * w + (s - 1) * r + sr) + s * w + (s - 1) * r;
-        } else if (phase === "seriesRest") rem += (s - 1) * (w + r) + w;
-    }
-    document.getElementById("totalRemaining").textContent = `Total restant: ${formatTime(rem)}`;
-}
-
-async function reset() {
-    clearInterval(interval); clearInterval(countdownInterval);
-    started = false; paused = false; phase = "idle";
-    const r = document.body.classList.contains("rotate-mode");
-    document.body.className = "idle" + (r ? " rotate-mode" : "");
-    document.getElementById("timer").textContent = "00:00";
-    document.getElementById("info").textContent = "Serie 0 / 0 — Exo 0 / 0";
-    document.getElementById("progressBar").style.width = "0%";
-    updateTotalRemaining();
-    await releaseWakeLock();
-}
-
-function toggleRotate() {
-    document.body.classList.toggle("rotate-mode");
-}
-
-// INIT
-if (window.speechSynthesis) speechSynthesis.getVoices();
-loadPresetList();
-updateTotalRemaining();
-["series","workMin","workSec","restMin","restSec","seriesRestMin","seriesRestSec","tours"].forEach(id => {
-    document.getElementById(id).addEventListener("input", updateTotalRemaining);
-});
+let interval=null,countdownInterval=null,phase="idle",timeLeft=0,phaseDuration=0,seriesCount=1,toursCount=1,started=false,paused=false,wakeLock=null,audioContext=null;const basePresets=[{name:"Randori JJB 5/1 x5",tours:1,series:5,workMin:5,workSec:0,restMin:1,restSec:0,seriesRestMin:1,seriesRestSec:0},{name:"30/30 x5 x4",tours:4,series:5,workMin:0,workSec:30,restMin:0,restSec:30,seriesRestMin:1,seriesRestSec:30}];function loadPresetList(){const s=document.getElementById("presetList"),c=s.value;s.innerHTML='<option value="">Charger un preset</option>';basePresets.forEach(p=>{const o=document.createElement("option");o.value=p.name,o.textContent=p.name,s.appendChild(o)}),s.value=c}function loadPreset(){const n=document.getElementById("presetList").value;if(!n)return;const p=basePresets.find(x=>x.name===n);if(!p)return;document.getElementById("tours").value=p.tours,document.getElementById("series").value=p.series,document.getElementById("workMin").value=p.workMin,document.getElementById("workSec").value=p.workSec,document.getElementById("restMin").value=p.restMin,document.getElementById("restSec").value=p.restSec,document.getElementById("seriesRestMin").value=p.seriesRestMin,document.getElementById("seriesRestSec").value=p.seriesRestSec,updateTotalRemaining()}function getSeconds(minId,secId){return(parseInt(document.getElementById(minId).value)||0)*60+(parseInt(document.getElementById(secId).value)||0)}function formatTime(s){const sec=Math.max(0,s),m=Math.floor(sec/60),se=sec%60;return`${m.toString().padStart(2,"0")}:${se.toString().padStart(2,"0")}`}function beep(f=800,d=0.1){try{audioContext||(audioContext=new(window.AudioContext||window.webkitAudioContext)),o=audioContext.createOscillator(),g=audioContext.createGain(),o.connect(g),g.connect(audioContext.destination),o.frequency.value=f,g.gain.value=.3,o.start(),o.stop(audioContext.currentTime+d)}catch(e){console.warn("Beep non supporté")}}function say(text){if(!window.speechSynthesis)return;try{const u=new SpeechSynthesisUtterance(text);u.lang="en-US",u.pitch=.3,u.rate=.85;const voices=speechSynthesis.getVoices(),v=voices.find(v=>v.lang.startsWith("en")&&(v.name.includes("Male")||v.name.includes("Daniel")||v.name.includes("Alex")||v.name.includes("Fred")));v&&(u.voice=v),speechSynthesis.speak(u)}catch(e){console.warn("Synthèse vocale non supportée")}}async function requestWakeLock(){"wakeLock"in navigator&&!wakeLock&&(wakeLock=await navigator.wakeLock.request("screen").catch(()=>{}))}async function releaseWakeLock(){wakeLock&&(await wakeLock.release().catch(()=>{}),wakeLock=null)}document.addEventListener("visibilitychange",()=>{"visible"===document.visibilityState&&started&&!paused&&requestWakeLock()});async function startPause(){started?(paused=!paused,!paused&&(beep(600,.2),await requestWakeLock())):(await requestWakeLock(),started=!0,paused=!1,countdown())}function countdown(){let c=3;document.getElementById("timer").textContent=c+":00",document.getElementById("info").textContent="Get ready...",say("Get ready"),beep(400,.1),countdownInterval=setInterval(()=>{if(!paused){if(c--,c>0)document.getElementById("timer").textContent=c+":00",say(c),beep(400,.1);else clearInterval(countdownInterval),say("GO!"),beep(1e3,.3),initWorkout()}},1e3)}function initWorkout(){toursCount=1,seriesCount=1,phase="work",phaseDuration=timeLeft=getSeconds("workMin","workSec"),setPhase(),runLoop()}function runLoop(){clearInterval(interval),interval=setInterval(()=>{if(!paused){timeLeft<=3&&timeLeft>0&&(document.body.classList.add("flash-warning"),beep(1200,.1),setTimeout(()=>document.body.classList.remove("flash-warning"),500)),document.getElementById("timer").textContent=formatTime(timeLeft),updateTotalRemaining(),updateProgress(),timeLeft--,timeLeft<0&&nextPhase()}},1e3)}function nextPhase(){const W=getSeconds("workMin","workSec"),R=getSeconds("restMin","restSec"),SR=getSeconds("seriesRestMin","seriesRestSec"),S=parseInt(document.getElementById("series").value)||1,T=parseInt(document.getElementById("tours").value)||1;"work"===phase?seriesCount<S?(phase="rest",timeLeft=phaseDuration=R,say("Rest"),beep(600,.2)):toursCount<T?(toursCount++,seriesCount=0,phase="seriesRest",timeLeft=phaseDuration=SR,say("Break time"),beep(500,.3)):(say("Workout complete. Well done!"),beep(1e3,.5),reset()):"rest"===phase?(seriesCount++,phase="work",timeLeft=phaseDuration=W,say(`Round ${seriesCount}`),beep(1e3,.2)):"seriesRest"===phase&&(seriesCount=1,phase="work",timeLeft=phaseDuration=W,say(`Series ${toursCount}. Round ${seriesCount}`),beep(1e3,.3)),setPhase()}function setPhase(){const r=document.body.classList.contains("rotate-mode");document.body.className=phase+(r?" rotate-mode":""),document.getElementById("info").textContent=`Serie ${toursCount} / ${document.getElementById("tours").value} — Exo ${seriesCount} / ${document.getElementById("series").value}`,updateProgress(!0)}function updateProgress(reset=!1){const b=document.getElementById("progressBar");b.style.width=reset?"0%":phaseDuration>0?Math.min(100,Math.max(0,(phaseDuration-timeLeft)/phaseDuration*100))+"%":"0%"}function updateTotalRemaining(){let rem=0;if("idle"===phase){const t=parseInt(document.getElementById("tours").value)||1,s=parseInt(document.getElementById("series").value)||1,w=getSeconds("workMin","workSec"),r=getSeconds("restMin","restSec"),sr=getSeconds("seriesRestMin","seriesRestSec");rem=t*(s*w+(s-1)*r+sr)-sr}else{const t=parseInt(document.getElementById("tours").value)||1,s=parseInt(document.getElementById("series").value)||1,w=getSeconds("workMin","workSec"),r=getSeconds("restMin","restSec"),sr=getSeconds("seriesRestMin","seriesRestSec");rem+=Math.max(timeLeft,0),"work"===phase?rem+=(s-seriesCount)*(w+r):"rest"===phase&&(rem+=(s-seriesCount)*(w+r)+w),toursCount<t&&(rem+=sr,"seriesRest"===phase&&(rem-=sr,rem+=(s-1)*(w+r)+w),rem+=(t-toursCount-1)*(s*w+(s-1)*r+sr)+s*w+(s-1)*r),"seriesRest"===phase&&(rem+=(s-1)*(w+r)+w)}document.getElementById("totalRemaining").textContent=`Total restant: ${formatTime(rem)}`}async function reset(){clearInterval(interval),clearInterval(countdownInterval),started=!1,paused=!1,phase="idle";const r=document.body.classList.contains("rotate-mode");document.body.className="idle"+(r?" rotate-mode":""),document.getElementById("timer").textContent="00:00",document.getElementById("info").textContent="Serie 0 / 0 — Exo 0 / 0",document.getElementById("progressBar").style.width="0%",updateTotalRemaining(),await releaseWakeLock()}function toggleRotate(){document.body.classList.toggle("rotate-mode")}window.speechSynthesis&&speechSynthesis.getVoices(),loadPresetList(),updateTotalRemaining(),["series","workMin","workSec","restMin","restSec","seriesRestMin","seriesRestSec","tours"].forEach(id=>{document.getElementById(id).addEventListener("input",updateTotalRemaining)});
 </script>
 </body>
 </html>
