@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Chrono HIIT &amp; Tabata",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Chrono HIIT &amp; Tabata",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "sports"
+  ],
+  "id": "nesmx",
+  "description": "Chrono HIIT &amp; Tabata\n\nUn chrono simple, puissant et pensé pour l’entraînement réel.\nPas de blabla. Juste ce qu’il faut pour envoyer.\n\nYounes Personal Trainer est une PWA conçue pour les sportifs, coachs et pratiquants de HIIT, Tabata, Cross-training, JJB, grappling ou préparation physique.\n\nFonctionnalités clés\nChrono Tabata / HIIT entièrement personnalisable\nPresets prêts à l’emploi (30/30, randori, circuits, etc.)\nAnnonces vocales en anglais, voix grave et motivante\nAffichage clair, lisible, utilisable en plein effort\nMode rotation pour poser le téléphone au sol\nCalcul du temps total restant en temps réel\nFonctionne hors ligne (PWA)\n\nPensé par un coach\nDéveloppé par Younes Personal Trainer, coach sportif et préparateur physique, ce chrono va à l’essentiel : efficacité, lisibilité, zéro distraction.\n\nIdéal pour\nHIIT, Tabata, Musculation, JJB, Grappling, Circuits training, Coaching individuel ou collectif"
+}
