@@ -6,7 +6,7 @@
 <title>Chrono HIIT & Tabata</title>
 
 <!-- MANIFEST EMBARQUE - Valide pour PWABuilder -->
-<link rel="manifest" href="application/manifest+json;base64,eyJuYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJzaG9ydF9uYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJkZXNjcmlwdGlvbiI6IkNocm9ubyBISUlUICYgVGFiYXRhXG5cbkVuIGNocm9ubyBzaW1wbGUsIHB1aXNzYW50IGV0IHDDqW5z6WUgcG91ciBsJ2VudHJhw6luZW1lbnQgcsOpZWwuXG5QYXMgZGUgYmxhYmxhLiBKdXN0ZSBjZSBxdSdpbCBmYXV0IHBvdXIgZW52b3llci5cblxuWW91bmVzIFBlcnNvbmFsIFRyYWlubmVyIGVzdCB1bmUgUFdBIcOpcmlz6WUgcG91ciBsZXMgc3BvcnRpZnMsIGNvYWNoIHNldCBwcmF0aXF1YW50cyBkZSBISUlULCBUYWJhdGEsIENyb3NzLXRyYWluaW5nLCBKSkIsIGdyYXBwbGluZyBvdSBwcsOpcGFyYXRpb24gcGh5c2lxdWUuXG5cbkZvbmN0aW9ubmFsaXRpxJlzIGNs6JtzXG5DaHJvbm8gVGFiYXRhIC8gSElJVCBlbnRpcmVtZW50IHBlcnNvbm5hbGlzYWJsZVxuUHJlc2V0cyBwcvl0cyDDoCBsJ2VtcGxvaSAoMzAvMzAsIHJhbmRvcmksIGNpcmN1aXRzLCBldGMuKVxuQW5ub25jZXMgdm9jYWxlcyBlbiBhbmdsYWlzLCB2b2lzIGdyYXZlIGV0IG1vdGl2YW50ZVxuQWZmaWNoYWdlIGNsYWlyLCBsaXNpYmxlLCB1dGlsaXNhYmxlIGVuIHBsZWluIGVmZm9ydFxuTW9kZSByb3RhdGlvbiBwb3VyIHBvc2VyIGxlIHRlbMOpcGhvbmUgYXUgc29sXG5DYWxjdWwgZHUgdGVtcHMgdG90YWwgcmVzdGFudCBlbiB0ZW1wcyByw6lsZVxuRm9uY3Rpb25uZSBob3JzIGxpbmUgKFBXQSkiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzExMTEzMCIiLCJ0aGVtZV9jb2xvciI6IiNjMTEyMWYiLCJzdGFydF91cmwiOiIvIiwic2NvcGUiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJvcmllbnRhdGlvbiI6ImFueSIsImRpcjIiOiJsdHIiLCJjYXRlZ29yaWVzIjpbInNwb3J0cyJdLCJpY29ucyI6W119">
+<link rel="manifest" href="application/manifest+json;base64,eyJuYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJzaG9ydF9uYW1lIjoiQ2hyb25vIEhJSVQgJiBUYWJhdGEiLCJkZXNjcmlwdGlvbiI6IkNocm9ubyBISUlUICYgVGFiYXRhXG5cbkVuIGNocm9ubyBzaW1wbGUsIHB1aXNzYW50IGV0IHDDqW5z6WUgcG91ciBsJ2VudHJhw6luZW1lbnQgcsOpZWwuXG5QYXMgZGUgYmxhYmxhLiBKdXN0ZSBjZSBxdSdpbCBmYXV0IHBvdXIgZW52b3llci5cblxuWW91bmVzIFBlcnNvbmFsIFRyYWlubmVyIGVzdCB1bmUgUFdBIcOpcmlz6WUgcG91ciBsZXMgc3BvcnRpZnMsIGNvYWNoIHNldCBwcmF0aXF1YW50cyBkZSBISUlULCBUYWJhdGEsIENyb3NzLXRyYWluaW5nLCBKSkIsIGdyYXBwbGluZyBvdSBwcsOpcGFyYXRpb24gcGh5c2lxdWUuXG5cbkZvbmN0aW9ubmFsaXRpxJlzIGNs6JtzXG5DaHJvbm8gVGFiYXRhIC8gSElJVCBlbnRpcmVtZW50IHBlcnNvbm5hbGlzYWJsZVxuUHJlc2V0cyBwcvl0cyDDoCBsJ2VtcGxvaSAoMzAvMzAsIHJhbmRvcmksIGNpcmN1aXRzLCBldGMuKVxuQW5ub25jZXMgdm9jYWxlcyBlbiBhbmdsYWlzLCB2b2lzIGdyYXZlIGV0IG1vdGl2YW50ZVxuQWZmaWNoYWdlIGNsYWlyLCBsaXNpYmxlLCB1dGlsaXNhYmxlIGVuIHBsZWluIGVmZm9ydFxuTW9kZSByb3RhdGlvbiBwb3VyIHBvc2VyIGxlIHRlbMOpcGhvbmUgYXUgc29sXG5DYWxjdWwgZHUgdGVtcHMgdG90YWwgcmVzdGFudCBlbiB0ZW1wcyByw6lsZVxuRm9uY3Rpb25uZSBob3JzIGxpbmUgKFBXQSkiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzExMTEzMCIiLCJ0aGVtZV9jb2xvciI6IiNjMTEyMWYiLCJzdGFydF91cmwiOiIvIiwic2NvcGUiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJvcmllbnRhdGlvbiI6ImFueSIsImRpcjIiOiJsdHIiLCJjYXRlZ29yaWVzIjpbInNwb3J0cyJdfQ==">
 
 <style>
 html, body {
@@ -76,7 +76,7 @@ button {
 .start { background: #000; color: #fff; }
 .stop { background: #444; color: #fff; }
 
-/* ROTATE BUTTON — TOUJOURS EN BAS À GAUCHE */
+/* ROTATE BUTTON — EN BAS À GAUCHE */
 .rotate-btn {
     position: fixed;
     bottom: 10px;
@@ -202,10 +202,8 @@ body.rotate-mode .settings {
     <div class="info" id="info">Serie 0 / 0 — Exo 0 / 0</div>
 </div>
 
-<!-- BOUTON ROTATION : EN BAS À GAUCHE -->
 <button class="rotate-btn" onclick="toggleRotate()">🔄</button>
 
-<!-- CRÉDIT -->
 <div class="credit">
     <a href="https://sites.google.com/view/younes-personal-trainer" target="_blank" rel="noopener">Younes Personal Trainer</a>
 </div>
