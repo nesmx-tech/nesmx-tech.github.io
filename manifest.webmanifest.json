@@ -1,0 +1,22 @@
+{
+  "name": "Chrono HIIT & Tabata",
+  "short_name": "Tabata",
+  "description": "Chrono HIIT & Tabata\n\nUn chrono simple, puissant et pensé pour l’entraînement réel.\nPas de blabla. Juste ce qu’il faut pour envoyer.\n\nYounes Personal Trainer est une PWA conçue pour les sportifs, coachs et pratiquants de HIIT, Tabata, Cross-training, JJB, grappling ou préparation physique.\n\nFonctionnalités clés\n• Chrono Tabata / HIIT entièrement personnalisable\n• Presets prêts à l’emploi (30/30, randori, circuits, etc.)\n• Annonces vocales en anglais, voix grave et motivante\n• Affichage clair, lisible, utilisable en plein effort\n• Mode rotation pour poser le téléphone au sol\n• Calcul du temps total restant en temps réel\n• Fonctionne hors ligne (PWA)\n\nPensé par un coach\nDéveloppé par Younes Personal Trainer, coach sportif et préparateur physique, ce chrono va à l’essentiel : efficacité, lisibilité, zéro distraction.\n\nIdéal pour\nHIIT, Tabata, Musculation, JJB, Grappling, Circuits training, Coaching individuel ou collectif",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "dir": "ltr",
+  "background_color": "#111130",
+  "theme_color": "#c1121f",
+  "categories": ["sports"],
+  "id": "nesmx",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23c1121f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%23fff' font-size='64' font-family='Arial' dy='.35em'%3ETABATA%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
