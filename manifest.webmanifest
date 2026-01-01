@@ -1,22 +1,15 @@
 {
   "name": "Chrono HIIT & Tabata",
   "short_name": "chrono hiit",
-  "description": "Un chrono simple, puissant et pensé pour l’entraînement réel. Idéal pour HIIT, Tabata, JJB, Cross-training, circuits ou coaching.",
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
-  "orientation": "any",
-  "dir": "ltr",
-  "lang": "fr",
   "background_color": "#111130",
   "theme_color": "#c1121f",
-  "categories": ["sports", "fitness", "health"],
   "icons": [
     {
       "src": "/icone.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     }
   ]
 }
